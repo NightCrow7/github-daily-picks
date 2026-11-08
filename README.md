@@ -1,3 +1,5 @@
+![github-daily-picks](assets/cover.png)
+
 # github-daily-picks
 
 > 每天从 GitHub 挑三个**真正适合某个具体的人**的开源项目，用 API 核实真实数据，生成中文详情卡片。
@@ -43,13 +45,13 @@
 **方式一：skills CLI**
 
 ```bash
-npx skills@latest add <你的GitHub用户名>/github-daily-picks
+npx skills@latest add NightCrow7/github-daily-picks
 ```
 
 **方式二：手动**
 
 ```bash
-git clone https://github.com/<你的GitHub用户名>/github-daily-picks.git
+git clone https://github.com/NightCrow7/github-daily-picks.git
 cp -r github-daily-picks/github-daily-picks ~/.workbuddy/skills/
 ```
 
@@ -103,7 +105,10 @@ python github-daily-picks/scripts/repo_meta.py owner/repo other/repo
 ```
 github-daily-picks/
 ├── SKILL.md                        # 工作流、硬门槛、边界
-├── assets/card-template.html       # 卡片模板
+├── assets/
+│   ├── card-template.html          # 每日卡片模板
+│   ├── cover.png                   # 封面图（README 顶部）
+│   └── cover-source.html           # 封面源文件，改文案后重新截图即可
 ├── references/
 │   ├── onboarding.md               # 首次上手：从历史对话生成画像
 │   ├── card-spec.md                # 卡片字段、文风、反例
@@ -112,6 +117,20 @@ github-daily-picks/
     ├── search_repos.py             # 搜候选 + 硬门槛过滤
     └── repo_meta.py                # 核准真实元数据
 ```
+
+## 视觉规范
+
+封面和每日卡片共用同一套「**暖纸极简**」色板，刻意避开纯白与纯黑：
+
+| 角色 | 值 |
+|---|---|
+| 纸（背景） | `#FAF9F7` |
+| 墨（标题） | `#1C1A17` |
+| 正文 / 副标题 | `#3A352F` / `#5C574F` |
+| 分割线 | `#E6E1D8`（永远 1px） |
+| 唯一强调色 | 砖红 `#B8442A` |
+
+三条硬规则：区域划分**只靠 1px 线**，不用卡片和阴影；字号超 40px **必须负字距**；强调色全页**不超过 3 处**。改文案后想重新出封面，直接改 `assets/cover-source.html` 再用浏览器截图。
 
 ## 隐私提醒
 
