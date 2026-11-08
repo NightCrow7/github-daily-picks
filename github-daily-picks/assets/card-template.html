@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 每日精选 · 【日期】</title>
+<style>
+  :root{
+    --paper:#faf9f7;
+    --card:#ffffff;
+    --ink:#1c1a17;
+    --ink-2:#5c574f;
+    --ink-3:#948d82;
+    --line:#e6e1d8;
+    --accent:#b8442a;
+    --accent-soft:#f6ece7;
+    --ok:#3f6b45;
+    --warn:#8a6210;
+    --no:#8f3a30;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+    font-size:15px;line-height:1.75;
+    padding:48px 20px 72px;
+  }
+  .wrap{max-width:880px;margin:0 auto;}
+
+  .head{margin-bottom:36px;padding-bottom:22px;border-bottom:1px solid var(--line);}
+  .head .kicker{
+    font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:10px;
+  }
+  .head h1{font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.3;}
+  .head .date{font-size:13px;color:var(--ink-3);margin-top:8px;}
+
+  .card{
+    position:relative;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:30px 32px 28px;margin-bottom:22px;
+    box-shadow:0 1px 2px rgba(28,26,23,.04),0 8px 24px -16px rgba(28,26,23,.18);
+    overflow:hidden;
+  }
+  .card .watermark{
+    position:absolute;right:18px;top:-14px;
+    font-size:96px;font-weight:700;line-height:1;
+    color:var(--paper);z-index:0;letter-spacing:-.05em;
+    font-family:"SFMono-Regular",Consolas,monospace;
+  }
+  .card > *{position:relative;z-index:1;}
+
+  .repo{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px;}
+  .repo h2{font-size:20px;font-weight:600;letter-spacing:-.01em;}
+  .repo h2 a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;}
+  .repo h2 a:hover{border-bottom-color:var(--accent);}
+  .repo .tag{
+    font-size:11px;color:var(--accent);background:var(--accent-soft);
+    padding:2px 12px;border-radius:20px;letter-spacing:.04em;
+  }
+
+  .stats{
+    display:flex;flex-wrap:wrap;gap:0;margin:14px 0 20px;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .stats div{
+    flex:1 1 0;min-width:88px;padding:10px 0;
+    border-right:1px solid var(--line);
+  }
+  .stats div:last-child{border-right:none;}
+  .stats dt{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);}
+  .stats dd{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;margin-top:2px;}
+
+  .block{margin-top:18px;}
+  .block h3{
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-3);margin-bottom:7px;font-weight:600;
+  }
+  .block p{color:var(--ink-2);}
+  .block.why p{color:var(--ink);}
+  .block ul{list-style:none;color:var(--ink-2);}
+  .block li{padding-left:16px;position:relative;margin-bottom:4px;}
+  .block li::before{content:"—";position:absolute;left:0;color:var(--ink-3);}
+
+  .verdict{
+    margin-top:22px;display:inline-flex;align-items:center;gap:8px;
+    font-size:14px;font-weight:600;padding:7px 16px;border-radius:6px;
+    border:1px solid currentColor;
+  }
+  .verdict.install{color:var(--ok);background:#f3f7f3;}
+  .verdict.watch{color:var(--warn);background:#fbf6ea;}
+  .verdict.avoid{color:var(--no);background:#faf0ee;}
+
+  .foot{
+    margin-top:34px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:12px;color:var(--ink-3);
+  }
+  .foot b{color:var(--ink-2);font-weight:600;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <div class="kicker">Daily picks · for one specific person</div>
+    <h1>今天这三个，值得你看一眼</h1>
+    <div class="date">【YYYY-MM-DD】 · 数字均来自 GitHub API 实时查询</div>
+  </div>
+
+  <!-- ============ 卡片 01 ============ -->
+  <article class="card">
+    <span class="watermark">01</span>
+    <div class="repo">
+      <h2><a href="https://github.com/【owner/repo】">【owner/repo】</a></h2>
+      <span class="tag">【定位标签】</span>
+    </div>
+
+    <dl class="stats">
+      <div><dt>Stars</dt><dd>【】</dd></div>
+      <div><dt>语言</dt><dd>【】</dd></div>
+      <div><dt>协议</dt><dd>【】</dd></div>
+      <div><dt>最近提交</dt><dd>【】</dd></div>
+    </dl>
+
+    <div class="block">
+      <h3>它干什么</h3>
+      <p>【两三句人话，不用术语】</p>
+    </div>
+
+    <div class="block why">
+      <h3>为什么给你</h3>
+      <p>【结合画像里的具体处境，不使用通用介绍】</p>
+    </div>
+
+    <div class="block">
+      <h3>上手成本 / 你的机器</h3>
+      <ul>
+        <li>【安装方式：一键包 / 需编译 / 需 Python 环境】</li>
+        <li>【显存、磁盘、系统版本、A 卡兼容性判断】</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>实话实说的坑</h3>
+      <ul>
+        <li>【坑一】</li>
+        <li>【坑二】</li>
+      </ul>
+    </div>
+
+    <span class="verdict install">结论：值得装</span>
+  </article>
+
+  <!-- ============ 卡片 02 ============ -->
+  <article class="card">
+    <span class="watermark">02</span>
+    <div class="repo">
+      <h2><a href="https://github.com/【owner/repo】">【owner/repo】</a></h2>
+      <span class="tag">【定位标签】</span>
+    </div>
+
+    <dl class="stats">
+      <div><dt>Stars</dt><dd>【】</dd></div>
+      <div><dt>语言</dt><dd>【】</dd></div>
+      <div><dt>协议</dt><dd>【】</dd></div>
+      <div><dt>最近提交</dt><dd>【】</dd></div>
+    </dl>
+
+    <div class="block">
+      <h3>它干什么</h3>
+      <p>【】</p>
+    </div>
+
+    <div class="block why">
+      <h3>为什么给你</h3>
+      <p>【】</p>
+    </div>
+
+    <div class="block">
+      <h3>上手成本 / 你的机器</h3>
+      <ul>
+        <li>【】</li>
+        <li>【】</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>实话实说的坑</h3>
+      <ul>
+        <li>【】</li>
+        <li>【】</li>
+      </ul>
+    </div>
+
+    <span class="verdict watch">结论：观望</span>
+  </article>
+
+  <!-- ============ 卡片 03 ============ -->
+  <article class="card">
+    <span class="watermark">03</span>
+    <div class="repo">
+      <h2><a href="https://github.com/【owner/repo】">【owner/repo】</a></h2>
+      <span class="tag">【定位标签】</span>
+    </div>
+
+    <dl class="stats">
+      <div><dt>Stars</dt><dd>【】</dd></div>
+      <div><dt>语言</dt><dd>【】</dd></div>
+      <div><dt>协议</dt><dd>【】</dd></div>
+      <div><dt>最近提交</dt><dd>【】</dd></div>
+    </dl>
+
+    <div class="block">
+      <h3>它干什么</h3>
+      <p>【】</p>
+    </div>
+
+    <div class="block why">
+      <h3>为什么给你</h3>
+      <p>【】</p>
+    </div>
+
+    <div class="block">
+      <h3>上手成本 / 你的机器</h3>
+      <ul>
+        <li>【】</li>
+        <li>【】</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>实话实说的坑</h3>
+      <ul>
+        <li>【】</li>
+        <li>【】</li>
+      </ul>
+    </div>
+
+    <span class="verdict avoid">结论：别碰</span>
+  </article>
+
+  <div class="foot">
+    <b>判断口径</b>：值得装 = 今天就能用上；观望 = 有用但成本不划算，先存着；别碰 = 维护差或有坑。<br>
+    <b>不凑数</b>：池子里没有合格的，就只推一两个。
+  </div>
+
+</div>
+</body>
+</html>
