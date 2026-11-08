@@ -1,0 +1,5 @@
+profile.md
+github-daily/
+__pycache__/
+*.pyc
+.DS_Store
