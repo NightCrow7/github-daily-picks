@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{width:1200px;height:630px;background:#FAF9F7;color:#1c1a17;
+    font-family:"Inter","Segoe UI","Microsoft YaHei",sans-serif;position:relative;overflow:hidden;}
+  .wrap{padding:64px 72px;height:100%;display:flex;flex-direction:column;}
+  .top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:24px;border-bottom:1px solid #E6E1D8;}
+  .kicker{font-family:"SFMono-Regular",Consolas,monospace;font-size:13px;letter-spacing:.22em;color:#948d82;text-transform:uppercase;}
+  .badge{font-family:"SFMono-Regular",Consolas,monospace;font-size:12px;letter-spacing:.16em;color:#b8442a;
+    border:1px solid #b8442a;padding:5px 12px;border-radius:20px;}
+  h1{font-size:104px;line-height:.95;letter-spacing:-.05em;font-weight:600;margin-top:44px;}
+  h1 span{color:#b8442a;}
+  .sub{font-size:26px;color:#5c574f;margin-top:22px;letter-spacing:.01em;}
+  .pts{display:flex;gap:0;margin-top:auto;border-top:1px solid #E6E1D8;padding-top:26px;}
+  .pt{flex:1;padding-right:28px;position:relative;}
+  .pt+.pt{padding-left:28px;border-left:1px solid #E6E1D8;}
+  .pt b{display:block;font-family:"SFMono-Regular",Consolas,monospace;font-size:12px;color:#b8442a;margin-bottom:9px;letter-spacing:.14em;}
+  .pt p{font-size:17px;line-height:1.6;color:#3a352f;}
+  .foot{display:flex;justify-content:space-between;align-items:center;margin-top:28px;padding-top:20px;border-top:1px solid #E6E1D8;}
+  .cmd{font-family:"SFMono-Regular",Consolas,monospace;font-size:15px;color:#1c1a17;background:#F1EEE7;padding:9px 16px;border-radius:4px;}
+  .url{font-family:"SFMono-Regular",Consolas,monospace;font-size:13px;color:#948d82;}
+</style></head>
+<body><div class="wrap">
+  <div class="top">
+    <div class="kicker">Skill · for one specific person</div>
+    <div class="badge">MIT · 开源</div>
+  </div>
+  <h1>github-<span>daily</span>-picks</h1>
+  <div class="sub">每天三个，只挑真正适合你的开源项目。</div>
+  <div class="pts">
+    <div class="pt"><b>01</b><p>读你的历史对话，<br>先把你这个人搞清楚</p></div>
+    <div class="pt"><b>02</b><p>每个数字都来自<br>GitHub API 实时核实</p></div>
+    <div class="pt"><b>03</b><p>一张中文详情卡，<br>写清为什么给你、有什么坑</p></div>
+  </div>
+  <div class="foot">
+    <div class="cmd">npx skills add NightCrow7/github-daily-picks</div>
+    <div class="url">github.com/NightCrow7/github-daily-picks</div>
+  </div>
+</div></body></html>
