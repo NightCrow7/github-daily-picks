@@ -1,4 +1,4 @@
-![github-daily-picks](assets/cover.png)
+![github-daily-picks](github-daily-picks/assets/cover.png)
 
 # github-daily-picks
 
